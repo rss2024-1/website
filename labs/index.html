@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>RSS Team TA</title>
+<title>RSS Team 1</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,11 +34,23 @@ body, html {
 <!-- MAKE SURE YOU GET THE RELATIVE PATHS RIGHT FOR THE NAV BAR!!!!-->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="../#home" class="w3-bar-item w3-button w3-wide">RSS Team TA</a>
+    <a href="../#home" class="w3-bar-item w3-button w3-wide">RSS Team 1</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="../#about" class="w3-bar-item w3-button">About</a>
-      <a href="./" class="w3-bar-item w3-button"><i class="fa fa-folder"></i> Labs</a>
+      <div class="w3-dropdown-hover">
+          <button class="w3-bar-item w3-button"><i class="fa fa-folder"></i>Labs</a>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="lab_3" class="w3-bar-item w3-button">Lab 3</a>
+              <a href="lab_4" class="w3-bar-item w3-button">Lab 4</a>
+              <!-- Add -->
+              <!-- Future -->
+              <!-- Labs -->
+              <!-- Here -->
+              <!-- (and below) -->
+              <a href="./" class="w3-bar-item w3-button">All Labs</a>
+          </div>
+      </div>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
       <a href="https://github.com/mit-rss" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
     </div>
@@ -55,7 +67,19 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
   <a href="../#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <a href="./" onclick="w3_close()" class="w3-bar-item w3-button">Labs</a>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Labs</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="lab_3/" onclick="w3_close()" class="w3-bar-item w3-button">Lab 3</a>
+            <a href="lab_4/" onclick="w3_close()" class="w3-bar-item w3-button">Lab 4</a>
+            <!-- Add -->
+            <!-- Future -->
+            <!-- Labs -->
+            <!-- Here -->
+            <!-- (and above) -->
+            <a href="./" onclick="w3_close()" class="w3-bar-item w3-button">All Labs</a>
+        </div>
+    </div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
   <a href="https://github.com/mit-rss" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
 </nav>
