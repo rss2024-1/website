@@ -36,24 +36,30 @@ body, html {
 <!-- MAKE SURE YOU GET THE RELATIVE PATHS RIGHT FOR THE NAV BAR!!!!-->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="../../#home" class="w3-bar-item w3-button w3-wide">RSS Team 1</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="../../#about" class="w3-bar-item w3-button">About</a>
-      <div class="w3-dropdown-hover">
-        <button class="w3-bar-item w3-button"><i class="fa fa-folder"></i>Labs</a>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="../lab_3" class="w3-bar-item w3-button">Lab 3</a>
-          <a href="../lab_4" class="w3-bar-item w3-button">Lab 4</a>
-        </div>
+      <a href="../../#home" class="w3-bar-item w3-button w3-wide">RSS Team 1</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+          <a href="../../#about" class="w3-bar-item w3-button">About</a>
+          <div class="w3-dropdown-hover">
+              <button class="w3-bar-item w3-button"><i class="fa fa-folder"></i>Labs</a>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="../lab_3" class="w3-bar-item w3-button">Lab 3</a>
+                  <a href="../lab_4" class="w3-bar-item w3-button">Lab 4</a>
+                  <!-- Add -->
+                  <!-- Future -->
+                  <!-- Labs -->
+                  <!-- Here -->
+                  <!-- (and below) -->
+                  <a href="../" class="w3-bar-item w3-button">All Labs</a>
+              </div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
+          <a href="https://github.com/rss2024-1" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
       </div>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
-      <a href="https://github.com/rss2024-1" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+      </a>
   </div>
 </div>
 
@@ -62,11 +68,17 @@ body, html {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
   <a href="../../#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
   <div class="w3-dropdown-hover">
-    <button class="w3-button">Labs</button>
-    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a href="../lab_3/" class="w3-bar-item w3-button">Lab 3</a>
-      <a href="../lab_4/" class="w3-bar-item w3-button">Lab 4</a>
-    </div>
+      <button class="w3-button">Labs</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="../lab_3/" onclick="w3_close()" class="w3-bar-item w3-button">Lab 3</a>
+          <a href="../lab_4/" onclick="w3_close()" class="w3-bar-item w3-button">Lab 4</a>
+          <!-- Add -->
+          <!-- Future -->
+          <!-- Labs -->
+          <!-- Here -->
+          <!-- (and above) -->
+          <a href="../" onclick="w3_close()" class="w3-bar-item w3-button">All Labs</a>
+      </div>
   </div>
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
   <a href="https://github.com/rss2024-1" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
@@ -74,9 +86,10 @@ body, html {
 
 <header class="title_img w3-display-container w3-grayscale-min">
   <div class="w3-display-bottommiddle w3-text-white">
-    <h1>Team 1</h1>
+      <h1>Team 1</h1>
   </div>
 </header>
+
 
 <!-- End of repeated content on each page-->
 
